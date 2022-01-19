@@ -1,3 +1,11 @@
+# Haskell
 .stack-work/
 dist-newstyle/
 *~
+
+# Racket
+\#*
+.\#*
+.DS_Store
+compiled/
+/doc/
