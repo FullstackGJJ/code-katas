@@ -17,8 +17,7 @@
        ["N"
         (traverse-decision-tree (node-right tree))]
        [_ 
-        (displayln "Invalid input")])])
-  )
+        (displayln "Invalid input")])]))
 
 (module+ main
   (require racket/cmdline)
@@ -37,5 +36,4 @@
   (define battery-terminals-corroded-question (node "Q" "Are the battery terminals corroded? " clean-terminals-answer replace-cables-answer))
   (define car-silent-during-keyturn-question (node "Q" "Is the car silent when you turn the key? " battery-terminals-corroded-question car-clicking-noise-question))
   (displayln "Answer Y to indicate yes or N to indicate no")
-  (traverse-decision-tree car-silent-during-keyturn-question)
-  )
+  (traverse-decision-tree car-silent-during-keyturn-question))
